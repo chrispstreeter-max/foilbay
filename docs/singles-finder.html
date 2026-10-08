@@ -35,9 +35,11 @@ footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted)
 <ol>
 <li>Install <strong>Shopify Search &amp; Discovery</strong> (free, made by Shopify).</li>
 <li>Open the app › <strong>Filters</strong> › <strong>Add filter</strong>.</li>
-<li>Add <strong>Availability</strong>, <strong>Price</strong>, <strong>Rarity</strong> and <strong>Condition</strong> (category fields or the Condition variant option), plus <strong>Tag</strong> if you use <code>set:</code> tags, and <strong>Vendor</strong> if each game is a vendor.</li>
-<li>Rename filters as you like. The names appear in the sidebar.</li>
+<li>Add <strong>Availability</strong>, <strong>Price</strong>, <strong>Condition</strong> (the Condition variant option) and <strong>Vendor</strong> if each game is a vendor (rename it to <em>Game</em>).</li>
+<li>For <strong>Set</strong> and <strong>Rarity</strong>, use the trading card category fields, or product metafields named <code>tcg.set</code> and <code>tcg.rarity</code> (single line text). Metafields give clean filter values. A Tag filter would also list every other tag, like <code>new</code> or <code>number:004/165</code>.</li>
 </ol>
+<p>To create the metafields: <strong>Settings › Custom data › Products › Add definition</strong>, namespace and key <code>tcg.set</code> (name <em>Set</em>) and <code>tcg.rarity</code> (name <em>Rarity</em>). Foilbay reads them automatically, and they then appear as filter sources in Search &amp; Discovery.
+5. Rename filters as you like. The names appear in the sidebar.</p>
 <p>Filters update the results instantly, without reloading the page. On phones, they open in a drawer.</p>
 <h2>Quick filter chips</h2>
 <p><strong>Singles finder › Quick filter chips</strong> shows one filter as a row of chips above the results, for example <strong>Rarity</strong> or <strong>Set</strong>. Type the filter&#39;s name exactly as it appears in the sidebar.</p>
