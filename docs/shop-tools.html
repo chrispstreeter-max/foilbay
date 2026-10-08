@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shop tools · Foilbay docs</title><meta name="description" content="Foilbay: the Shopify theme for trading card game stores."><link rel="icon" href="../assets/favicon.png"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta property="og:title" content="Shop tools · Foilbay docs"><meta property="og:description" content="Foilbay: the Shopify theme for trading card game stores."><meta property="og:image" content="../assets/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --ink: #16131F; --paper: #FAF8F3; --violet: #6C4CF5; --muted: #5F5878; --line: #E6E1D8; --holo: linear-gradient(125deg,#7FF4E0,#9D8BFF 38%,#FF8FC7 68%,#FFD86B); color-scheme: light; }
+* { box-sizing: border-box; } body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 "DM Sans", system-ui, sans-serif; }
+a { color: var(--violet); } img { max-width: 100%; display: block; }
+h1, h2, h3 { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 800; letter-spacing: -.025em; line-height: 1.05; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+header.top { border-bottom: 1px solid var(--line); background: var(--paper); position: sticky; top: 0; z-index: 2; }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+header.top nav { display: flex; gap: 18px; flex-wrap: wrap; } header.top nav a { color: var(--ink); text-decoration: none; font-weight: 600; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; background: var(--ink); color: var(--paper); font-weight: 700; text-decoration: none; border: 0; font-size: 16px; cursor: pointer; }
+.btn.alt { background: var(--violet); }
+.hero { padding: 72px 0 40px; display: grid; gap: 40px; align-items: center; }
+.hero h1 { font-size: clamp(42px, 7vw, 84px); margin: 0 0 18px; } .hero h1 em { font-style: normal; background: var(--holo); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p { font-size: 20px; color: var(--muted); max-width: 34em; }
+.shot { border-radius: 16px; overflow: hidden; box-shadow: 0 40px 80px -40px rgba(22,19,31,.5), 0 0 0 1px rgba(22,19,31,.08); background: #fff; }
+.grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: 32px 0 64px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+.card h3 { margin: 0 0 8px; font-size: 22px; } .card p { margin: 0; color: var(--muted); }
+.docs { display: grid; gap: 40px; padding: 40px 0 80px; } .docs aside a { display: block; padding: 6px 0; color: var(--ink); text-decoration: none; } .docs aside a[aria-current] { color: var(--violet); font-weight: 700; }
+.docs article { min-width: 0; } .docs article h1 { font-size: 46px; } .docs table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; } .docs th, .docs td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; background: #fff; }
+.docs pre { background: var(--ink); color: #FAF8F3; padding: 14px 16px; border-radius: 12px; overflow-x: auto; } .docs code { font-size: .92em; }
+form { display: grid; gap: 14px; max-width: 640px; } label { display: grid; gap: 6px; font-weight: 600; } input, textarea, select { font: inherit; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 10px; background: #fff; } textarea { min-height: 160px; }
+footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 15px; }
+@media (min-width: 900px) { .hero { grid-template-columns: 1fr 1.1fr; } .docs { grid-template-columns: 220px 1fr; } .docs aside { position: sticky; top: 90px; align-self: start; } }
+</style></head><body>
+<header class="top"><div class="wrap"><a href="../index.html" aria-label="Foilbay home"><img src="../assets/foilbay-lockup.svg" alt="Foilbay" height="36" style="height:36px;width:auto"></a>
+<nav aria-label="Site"><a href="../docs/index.html">Docs</a><a href="../docs/faq.html">FAQ</a><a href="../support.html">Support</a></nav></div></header>
+<main><div class="wrap docs"><aside><nav aria-label="Docs"><a href="getting-started.html">Getting started</a><a href="card-data.html">Card data</a><a href="singles-finder.html">Singles finder</a><a href="product-page.html">Product page</a><a href="events.html">Events and tournaments</a><a href="home-page.html">Home page sections</a><a href="styles.html">Styles</a><a href="shop-tools.html" aria-current="page">Shop tools</a><a href="faq.html">FAQ</a><a href="release-notes.html">Release notes</a></nav></aside><article><h1>Shop tools</h1>
+<p>Foilbay includes the tools card shops usually pay apps for: a deck list importer, a buylist page, set checklists, quick view, a sticky add-to-cart bar, star ratings, recently viewed products and menu panels with collection images.</p>
+<h2>Deck list importer</h2>
+<p>Shoppers paste a deck list and add every card you stock to the cart in one click.</p>
+<ol>
+<li><strong>Online Store › Pages › Add page.</strong> Title it <em>Deck importer</em>. Under <strong>Theme template</strong>, choose <code>page.deck-importer</code>.</li>
+<li>Add the page to your menu.</li>
+</ol>
+<p>Accepted formats, one card per line: <code>4 Card name</code>, <code>4x Card name</code>, <code>Card name x4</code>. Section headers like <code>Deck:</code> or <code>Sideboard:</code>, set codes like <code>(EMF) 4</code> or <code>EMF 4</code>, and foil markers like <code>*F*</code> are skipped.</p>
+<p><strong>How cards are matched.</strong> Each name is looked up with your store&#39;s own search. A product matches when its title starts with the card name, followed by anything in brackets or after a dash, bar or dot. So all of these match <code>Emberlynx</code>:</p>
+<ul>
+<li><code>Emberlynx</code></li>
+<li><code>Emberlynx - Emberfall 004/165</code></li>
+<li><code>Emberlynx (Holo)</code> and <code>Emberlynx [Promo]</code></li>
+<li><code>Emberlynx · PSA 10</code></li>
+</ul>
+<p>Accents and apostrophes are ignored. When several printings match, shoppers can pick from all of them.</p>
+<p><strong>Stock.</strong> The importer reads each version&#39;s stock. If someone asks for 4 copies and you have 2 Near Mint and 3 Lightly Played, it fills the order with 2 NM and 2 LP, using the <strong>Default condition choice</strong> (cheapest first, or best condition first). If there still aren&#39;t enough, it shows a row saying how many are missing. Shoppers can change any version or quantity, and quantities can&#39;t go above what you have. Products that continue selling when out of stock have no limit.</p>
+<p>Cards you don&#39;t stock are listed with a link to search your store.</p>
+<h2>Buylist (sell to us)</h2>
+<ol>
+<li>Create a page called <em>Sell to us</em> with the template <code>page.buylist</code>.</li>
+<li>In the theme editor, set your <strong>Cash payout</strong> and <strong>Store credit payout</strong> percentages and the condition choices.</li>
+</ol>
+<p>Shoppers add one row per card: name, set and number, condition and quantity. Submissions arrive in your store&#39;s contact email, tagged <code>buylist</code>, with every card on its own line. The page works without JavaScript too: shoppers can type their list into a text box.</p>
+<h2>Set checklist</h2>
+<p>A set checklist shows every card in a set in card number order, with dashed slots for numbers you don&#39;t stock. Collectors use it to fill gaps in their binder.</p>
+<ol>
+<li>Make a collection for the set, for example <em>Emberfall</em> with the condition <em>Tag is equal to set:Emberfall</em>.</li>
+<li>Link to the checklist by adding <code>?view=checklist</code> to the collection URL, for example <code>/collections/emberfall?view=checklist</code>. Shopify then shows the collection with the <code>collection.checklist</code> template. You can put the link in a menu or in the collection description.</li>
+<li>Card numbers come from the <code>tcg.number</code> metafield or a <code>number:</code> tag. Write them as <code>004/165</code> so the checklist knows the set has 165 cards, or enter <strong>Cards in set</strong> in the section settings.</li>
+</ol>
+<p>Shoppers can show all cards, only in-stock cards, only missing numbers or only foils.</p>
+<h2>Quick view</h2>
+<p>Products with options, like sleeves in several colors, show a <strong>Quick view</strong> button in product grids. It opens the product in a pop-up with the variant picker and add to cart. Turn it off in <strong>Theme settings › Product cards › Show quick view</strong>. Singles keep their condition chips instead.</p>
+<h2>Sticky add-to-cart bar</h2>
+<p>Add the <strong>Sticky add to cart bar</strong> block to the product page. The bar slides in once shoppers scroll past the buy buttons or condition table.</p>
+<h2>Star ratings</h2>
+<p>Foilbay shows stars on product cards and the product page from Shopify&#39;s standard product rating fields (<code>reviews.rating</code> and <code>reviews.rating_count</code>). Install any reviews app that fills those fields, such as Shopify Product Reviews, Judge.me or Loox. Stars are hidden for products without ratings. Turn them off in <strong>Theme settings › Product cards › Show star rating</strong>, or remove the <strong>Rating</strong> block on the product page.</p>
+<h2>Recently viewed</h2>
+<p>Add the <strong>Recently viewed</strong> section to the product page or any template. It lists the products a shopper looked at most recently, stored in their browser. Nothing is shown until they have viewed at least one other product.</p>
+<h2>Menu panels with images</h2>
+<p>In <strong>Header › Menu panels with images</strong>, dropdowns open as a full-width panel that shows each collection&#39;s image. Set collection images in <strong>Products › Collections</strong>. Links to other pages show a holographic placeholder.</p>
+</article></div></main>
+<footer><div class="wrap">Foilbay by CHRISPSDesign · Sold on the Shopify Theme Store · <a href="../support.html">Support</a></div></footer></body></html>

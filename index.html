@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foilbay · The Shopify theme for card shops</title><meta name="description" content="Foilbay: the Shopify theme for trading card game stores."><link rel="icon" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:title" content="Foilbay · The Shopify theme for card shops"><meta property="og:description" content="Foilbay: the Shopify theme for trading card game stores."><meta property="og:image" content="assets/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --ink: #16131F; --paper: #FAF8F3; --violet: #6C4CF5; --muted: #5F5878; --line: #E6E1D8; --holo: linear-gradient(125deg,#7FF4E0,#9D8BFF 38%,#FF8FC7 68%,#FFD86B); color-scheme: light; }
+* { box-sizing: border-box; } body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 "DM Sans", system-ui, sans-serif; }
+a { color: var(--violet); } img { max-width: 100%; display: block; }
+h1, h2, h3 { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 800; letter-spacing: -.025em; line-height: 1.05; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+header.top { border-bottom: 1px solid var(--line); background: var(--paper); position: sticky; top: 0; z-index: 2; }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+header.top nav { display: flex; gap: 18px; flex-wrap: wrap; } header.top nav a { color: var(--ink); text-decoration: none; font-weight: 600; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; background: var(--ink); color: var(--paper); font-weight: 700; text-decoration: none; border: 0; font-size: 16px; cursor: pointer; }
+.btn.alt { background: var(--violet); }
+.hero { padding: 72px 0 40px; display: grid; gap: 40px; align-items: center; }
+.hero h1 { font-size: clamp(42px, 7vw, 84px); margin: 0 0 18px; } .hero h1 em { font-style: normal; background: var(--holo); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p { font-size: 20px; color: var(--muted); max-width: 34em; }
+.shot { border-radius: 16px; overflow: hidden; box-shadow: 0 40px 80px -40px rgba(22,19,31,.5), 0 0 0 1px rgba(22,19,31,.08); background: #fff; }
+.grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: 32px 0 64px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+.card h3 { margin: 0 0 8px; font-size: 22px; } .card p { margin: 0; color: var(--muted); }
+.docs { display: grid; gap: 40px; padding: 40px 0 80px; } .docs aside a { display: block; padding: 6px 0; color: var(--ink); text-decoration: none; } .docs aside a[aria-current] { color: var(--violet); font-weight: 700; }
+.docs article { min-width: 0; } .docs article h1 { font-size: 46px; } .docs table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; } .docs th, .docs td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; background: #fff; }
+.docs pre { background: var(--ink); color: #FAF8F3; padding: 14px 16px; border-radius: 12px; overflow-x: auto; } .docs code { font-size: .92em; }
+form { display: grid; gap: 14px; max-width: 640px; } label { display: grid; gap: 6px; font-weight: 600; } input, textarea, select { font: inherit; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 10px; background: #fff; } textarea { min-height: 160px; }
+footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 15px; }
+@media (min-width: 900px) { .hero { grid-template-columns: 1fr 1.1fr; } .docs { grid-template-columns: 220px 1fr; } .docs aside { position: sticky; top: 90px; align-self: start; } }
+</style></head><body>
+<header class="top"><div class="wrap"><a href="index.html" aria-label="Foilbay home"><img src="assets/foilbay-lockup.svg" alt="Foilbay" height="36" style="height:36px;width:auto"></a>
+<nav aria-label="Site"><a href="docs/index.html">Docs</a><a href="docs/faq.html">FAQ</a><a href="support.html">Support</a></nav></div></header>
+<main><div class="wrap">
+<section class="hero"><div><h1>The Shopify theme for <em>card shops.</em></h1><p>Singles finder, condition pricing and game-night events for every trading card game, from creature battlers to deck builders. No extra apps.</p>
+<p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn alt" href="https://themes.shopify.com/">Get it on the Theme Store</a><a class="btn" href="docs/index.html">Read the docs</a></p></div>
+<div class="shot"><img src="assets/index-desktop-0.png" alt="Foilbay home page with a fanned hand of cards" loading="eager"></div></section>
+<div class="grid"><div class="card"><h3>Singles finder</h3><p>Filter by set, rarity, condition and price. Switch between a binder grid and a dense price list.</p></div><div class="card"><h3>Condition table</h3><p>Every condition as its own row with stock, price and add to cart. NM, LP, MP at a glance.</p></div><div class="card"><h3>Events and tournaments</h3><p>League nights and prereleases with tickets, spots left and add to calendar.</p></div><div class="card"><h3>Release countdown</h3><p>Count down to release day and take pre-orders.</p></div><div class="card"><h3>Card data built in</h3><p>Reads Shopify's trading card fields, metafields or simple tags. Works with your inventory tool.</p></div><div class="card"><h3>Deck list importer</h3><p>Shoppers paste a deck list and add every card you stock to the cart in one click.</p></div><div class="card"><h3>Buylist and set checklists</h3><p>A sell-to-us page with cash and store credit rates, and set checklists that show the gaps.</p></div><div class="card"><h3>Three styles</h3><p>Foilbay, bright and collectible. Midnight, dark and made for game night. Arcade, loud and playful.</p></div></div>
+<div class="grid"><div class="shot"><img src="assets/collection-list-view-desktop-0.png" alt="Singles finder in list view" loading="lazy"></div><div class="shot"><img src="assets/product-desktop-0.png" alt="Product page with the condition table" loading="lazy"></div></div>
+</div></main>
+<footer><div class="wrap">Foilbay by CHRISPSDesign · Sold on the Shopify Theme Store · <a href="support.html">Support</a></div></footer></body></html>

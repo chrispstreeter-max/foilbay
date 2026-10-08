@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foilbay support</title><meta name="description" content="Foilbay: the Shopify theme for trading card game stores."><link rel="icon" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:title" content="Foilbay support"><meta property="og:description" content="Foilbay: the Shopify theme for trading card game stores."><meta property="og:image" content="assets/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --ink: #16131F; --paper: #FAF8F3; --violet: #6C4CF5; --muted: #5F5878; --line: #E6E1D8; --holo: linear-gradient(125deg,#7FF4E0,#9D8BFF 38%,#FF8FC7 68%,#FFD86B); color-scheme: light; }
+* { box-sizing: border-box; } body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 "DM Sans", system-ui, sans-serif; }
+a { color: var(--violet); } img { max-width: 100%; display: block; }
+h1, h2, h3 { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 800; letter-spacing: -.025em; line-height: 1.05; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+header.top { border-bottom: 1px solid var(--line); background: var(--paper); position: sticky; top: 0; z-index: 2; }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+header.top nav { display: flex; gap: 18px; flex-wrap: wrap; } header.top nav a { color: var(--ink); text-decoration: none; font-weight: 600; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; background: var(--ink); color: var(--paper); font-weight: 700; text-decoration: none; border: 0; font-size: 16px; cursor: pointer; }
+.btn.alt { background: var(--violet); }
+.hero { padding: 72px 0 40px; display: grid; gap: 40px; align-items: center; }
+.hero h1 { font-size: clamp(42px, 7vw, 84px); margin: 0 0 18px; } .hero h1 em { font-style: normal; background: var(--holo); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p { font-size: 20px; color: var(--muted); max-width: 34em; }
+.shot { border-radius: 16px; overflow: hidden; box-shadow: 0 40px 80px -40px rgba(22,19,31,.5), 0 0 0 1px rgba(22,19,31,.08); background: #fff; }
+.grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: 32px 0 64px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+.card h3 { margin: 0 0 8px; font-size: 22px; } .card p { margin: 0; color: var(--muted); }
+.docs { display: grid; gap: 40px; padding: 40px 0 80px; } .docs aside a { display: block; padding: 6px 0; color: var(--ink); text-decoration: none; } .docs aside a[aria-current] { color: var(--violet); font-weight: 700; }
+.docs article { min-width: 0; } .docs article h1 { font-size: 46px; } .docs table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; } .docs th, .docs td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; background: #fff; }
+.docs pre { background: var(--ink); color: #FAF8F3; padding: 14px 16px; border-radius: 12px; overflow-x: auto; } .docs code { font-size: .92em; }
+form { display: grid; gap: 14px; max-width: 640px; } label { display: grid; gap: 6px; font-weight: 600; } input, textarea, select { font: inherit; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 10px; background: #fff; } textarea { min-height: 160px; }
+footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 15px; }
+@media (min-width: 900px) { .hero { grid-template-columns: 1fr 1.1fr; } .docs { grid-template-columns: 220px 1fr; } .docs aside { position: sticky; top: 90px; align-self: start; } }
+</style></head><body>
+<header class="top"><div class="wrap"><a href="index.html" aria-label="Foilbay home"><img src="assets/foilbay-lockup.svg" alt="Foilbay" height="36" style="height:36px;width:auto"></a>
+<nav aria-label="Site"><a href="docs/index.html">Docs</a><a href="docs/faq.html">FAQ</a><a href="support.html">Support</a></nav></div></header>
+<main><div class="wrap" style="padding:48px 20px 80px">
+<h1 style="font-size:46px">Support</h1><p style="color:var(--muted);max-width:40em">Tell us what's happening and we'll reply within two working days. You'll get an automatic confirmation by email straight away.</p>
+<form method="post" action="https://formsubmit.co/hello@chrisps.co.uk" enctype="multipart/form-data">
+  <input type="hidden" name="_subject" value="Foilbay support request"><input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_autoresponse" value="Thanks for contacting Foilbay support. We've received your message and will reply within two working days.">
+  <input type="hidden" name="_next" value="https://chrispstreeter-max.github.io/foilbay/support.html?sent=1">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <label>Your name <input name="name" required autocomplete="name"></label>
+  <label>Email <input type="email" name="email" required autocomplete="email"></label>
+  <label>Store URL <input type="url" name="store_url" required placeholder="https://your-store.myshopify.com"></label>
+  <label>What's happening? <textarea name="description" required placeholder="What did you expect, and what happened instead? Which page?"></textarea></label>
+  <label>Screenshot or file (optional) <input type="file" name="attachment" accept="image/*,.pdf,.zip"></label>
+  <button class="btn alt" type="submit">Send to support</button>
+</form>
+<p id="sent" hidden style="margin-top:20px;padding:14px 16px;border-radius:12px;background:#E7F8F1;color:#0D5A40">Thanks, your message is on its way. Check your inbox for the confirmation.</p>
+<script>if (location.search.includes('sent=1')) document.getElementById('sent').hidden = false;</script></div></main>
+<footer><div class="wrap">Foilbay by CHRISPSDesign · Sold on the Shopify Theme Store · <a href="support.html">Support</a></div></footer></body></html>
